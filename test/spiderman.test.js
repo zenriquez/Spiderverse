@@ -16,7 +16,17 @@ describe("Unit test for Spiderman class", () => {
     });
   })
 
-  test('2) Use the metod getInfo()' () => {
+  test('2) Use the metod getInfo()', () => {
+
+
     const tomHolland = new Spiderman("Spiderman Marvel", 25, "Tom Holland", 5, "Marvel",)
-    expect(tomHolland.getInfo()).toBe("Hey I'm Tom Holland from Marvel studio")
+
+    expect(tomHolland.name).toBe("Spiderman Marvel")
+    expect(tomHolland.age).toBe(25)
+    expect(tomHolland.actor).toBe("Tom Holland")
+    expect(tomHolland.movies).toBe(5)
+    expect(tomHolland.studio).toBe("Marvel")
+
+  
+    expect(tomHolland.getInfo()).toBe("Hey, I'm Tom Holland from Marvel Studio")
   });
